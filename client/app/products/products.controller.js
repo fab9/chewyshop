@@ -42,7 +42,7 @@ angular.module('chewyshopApp')
             }, errorHandler($scope));
         };
 
-        $scope.upload = uploadHander($scope, Upload, $timeout);
+        //$scope.upload = uploadHander($scope, Upload, $timeout);
     });
 
 errorHandler = function ($scope) {
