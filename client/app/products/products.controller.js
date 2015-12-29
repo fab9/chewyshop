@@ -42,7 +42,7 @@ angular.module('chewyshopApp')
             }, errorHandler($scope));
         };
 
-        //$scope.upload = uploadHander($scope, Upload, $timeout);
+        $scope.upload = uploadHander($scope, Upload, $timeout);
     });
 
 errorHandler = function ($scope) {
@@ -50,3 +50,29 @@ errorHandler = function ($scope) {
         $scope.errors = httpResponse;
     };
 };
+
+uploadHander = function ($scope, Upload, $timeout) {
+    return function(file) {
+        if (file && !file.$error) {
+            $scope.file = file;
+            file.upload = Upload.upload({
+                url: '/api/products/'+$scope.product._id+'/upload',
+                file: file
+            });
+
+            file.upload.then(function (response) {
+                $timeout(function () {
+                    file.result = response.data;
+                });
+            }, function (response) {
+                if (response.status > 0){
+                    console.log(response.status + ': ' + response.data);
+                    errorHandler($scope)(response.status + ': ' + response.data);
+                }
+            });
+
+            file.upload.progress(function (evt) {
+                file.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total));
+            });
+        }
+    };
