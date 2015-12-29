@@ -12,6 +12,7 @@
 var _ = require('lodash');
 var Product = require('./product.model');
 var path = require('path');
+var Catalog = require('../catalog/catalog.model');
 
 function handleError(res, statusCode) {
   statusCode = statusCode || 500;
@@ -124,6 +125,29 @@ exports.upload = function(req, res) {
     Product.findByIdAsync(req.params.id)
         .then(handleEntityNotFound(res))
         .then(saveFile(res, file))
+        .then(responseWithResult(res))
+        .catch(handleError(res));
+};
+
+// The catalog action:
+// 1. Finds the category ID by the slug.
+// 2. Finds all the products that match the category's ID and the IDs of the category's children.
+exports.catalog = function(req, res) {
+    Catalog
+        .findOne({ slug: req.params.slug })
+        .execAsync()
+        .then(productsInCategory)
+        .then(responseWithResult(res))
+        .catch(handleError(res));
+};
+
+// For the search action, MongoDB's $text $search; will work on all the fields which have
+// text indexes, such as title and description.
+exports.search = function(req, res) {
+    Product
+        .find({ $text: { $search: req.params.term }})
+        .populate('categories')
+        .execAsync()
         .then(responseWithResult(res))
         .catch(handleError(res));
 };
