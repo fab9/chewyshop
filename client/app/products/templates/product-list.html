@@ -12,10 +12,10 @@
     <div class="row">
         <div class="col-sm-6 col-md-3" ng-repeat="product in products">
             <div class="thumbnail">
-                <img src="http://placehold.it/300x200" alt="{{product.title}}">
+                <h3>{{product.title}}</h3>
+                <img src="{{product.imageUrl}}" alt="{{product.title}}">
+                <figcaption class="figure-caption">{{product.description | limitTo: 100}} ...</figcaption>
                 <div class="caption">
-                    <h3>{{product.title}}</h3>
-                    <p>{{product.description | limitTo: 100}} ...</p>
                     <p>{{product.price | currency }}</p>
                     <p>
                         <a href="#" class="btn btn-primary" role="button">Buy</a>
