@@ -6,7 +6,7 @@ var multiparty = require('connect-multiparty');
 // For now, store the files locally, not in the cloud.
 var uploadOptions = { autoFile: true,
     uploadDir: 'client/assets/uploads/'
-}
+};
 
 var router = express.Router();
 
