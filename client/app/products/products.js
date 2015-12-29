@@ -25,5 +25,11 @@ angular.module('chewyshopApp')
             url: '/products/:id/edit',
             templateUrl: 'app/products/templates/product-edit.html',
             controller: 'ProductEditCtrl'
-        });
+        })
+
+      .state('productCatalog', {
+          url: '/products/:slug/catalog',
+          templateUrl: 'app/products/templates/product-list.html',
+          controller: 'ProductCatalogCtrl'
+      });
   });

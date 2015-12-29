@@ -5,10 +5,25 @@ var errorHandler, uploadHandler;
 angular.module('chewyshopApp')
     // Inject our `Products` factory into the controller.
     .controller('ProductsCtrl', function ($scope, Product) {
-        // Create new variable `$scope.products` so that `products` become available in the view as well.
+        // Create new variable `$scope.products` so that `products` becomes available in the view as well.
         $scope.products = Product.query();
+
+        // Listen to the event that's being broadcasted every time the search form changes.
+        $scope.$on('search:term', function (event, data) {
+            if(data.length) {
+                $scope.products = Product.search({id: data});
+                $scope.query = data;
+            } else {
+                $scope.products = Product.query();
+                $scope.query = '';
+            }
+        });
     })
 
+    .controller('ProductCatalogCtrl', function ($scope, $stateParams, Product) {
+        $scope.products = Product.catalog({id: $stateParams.slug});
+        $scope.query = $stateParams.slug;
+    })
     /*
      * We are injecting new dependencies besides the $scope and Products service,
      * such as $state and $stateParams. The first one allows us to redirect to a different
@@ -34,7 +49,7 @@ angular.module('chewyshopApp')
         };
     })
 
-    .controller('ProductEditCtrl', function ($scope, $state, $stateParams, Product) {
+    .controller('ProductEditCtrl', function ($scope, $state, $stateParams, Product, Upload, $timeout) {
         $scope.product = Product.get({id: $stateParams.id});
         $scope.editProduct = function () {
             Product.update({id: $scope.product._id}, $scope.product, function success(value /*, responseHeaders*/) {

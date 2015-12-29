@@ -73,6 +73,14 @@ function saveFile(res, file) {
     }
 }
 
+function productsInCategory(catalog) {
+    var catalog_ids = [catalog._id].concat(catalog.children);
+    return Product
+        .find({'categories': { $in: catalog_ids } })
+        .populate('categories')
+        .exec();
+}
+
 // Gets a list of Products
 exports.index = function(req, res) {
   Product.findAsync()
