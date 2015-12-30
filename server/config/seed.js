@@ -35,7 +35,7 @@ Catalog
     .find({})
     .remove()
     .then(function () {
-        return Catalog.create({ name: 'All'});
+        return Catalog.create({name: 'All'});
     })
     .then(function (catalog) {
         mainCatalog = catalog;
@@ -53,7 +53,7 @@ Catalog
         other = category._id;
         return Product.find({}).remove({});
     })
-    .then(function() {
+    .then(function () {
         return Product.create({
             title: 'Fat Cat',
             imageUrl: '/assets/uploads/appeteasers.jpg',
@@ -74,7 +74,91 @@ Catalog
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'Made with real bacon, these mouthwatering treats have a smoky, sizzling scent and a savory, meaty taste that dogs go wild for. Soft, chewy, delicious and easy to break apart, Beggin’ Strips provide a fun treat for dogs of all sizes.'
+            description: 'Bacon ipsum dolor amet incididunt swine shoulder mollit aute corned beef. Incididunt consequat bresaola labore ribeye salami et velit flank ullamco boudin proident in mollit ball tip. Labore ipsum in laboris pastrami veniam ex tail.'
+        }, {
+            title: 'Cat Thing',
+            imageUrl: 'http://placehold.it/300x300',
+            price: 5.97,
+            stock: 100,
+            categories: [cats],
+            description: 'Leberkas nostrud swine, biltong alcatra adipisicing dolore shank laboris anim. Filet mignon elit pancetta pork. Landjaeger tongue commodo, flank leberkas pastrami pig alcatra. Leberkas quis ham hock, in non drumstick chicken sed frankfurter tongue. Officia cillum rump magna.'
+        }, {
+            title: 'Dog thing',
+            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            price: 9.34,
+            stock: 100,
+            categories: [dogs],
+            description: 'Excepteur cillum ut, beef capicola ribeye labore biltong sed ground round pork chop proident strip steak short ribs id.'
+        }, {
+            title: 'Another Cat Thing',
+            imageUrl: 'http://placehold.it/300x300',
+            price: 5.97,
+            stock: 100,
+            categories: [cats],
+            description: 'Short ribs aliqua pork chop tenderloin shank. Biltong exercitation lorem leberkas drumstick, pork chop labore eu beef meatball tail ut deserunt cupim dolore. Minim drumstick officia, aliqua rump shank fugiat jerky andouille pastrami tempor esse.'
+        }, {
+            title: 'Another dog thing',
+            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            price: 9.34,
+            stock: 100,
+            categories: [dogs],
+            description: 'In leberkas exercitation porchetta pork in esse drumstick sausage filet mignon pork loin meatloaf picanha pork chop consectetur. Voluptate drumstick short loin, cupidatat bacon ball tip ipsum brisket aliqua turkey jerky.'
+        }, {
+            title: 'One More Cat Thingie',
+            imageUrl: 'http://placehold.it/300x300',
+            price: 5.97,
+            stock: 100,
+            categories: [cats],
+            description: 'Shoulder turkey capicola tail, salami aliqua laborum reprehenderit labore. Bacon ad minim beef ribs pig, shoulder biltong. Pig t-bone cow drumstick, ad ham officia proident venison cillum enim andouille ground round doner.'
+        }, {
+            title: 'One more dog thing',
+            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            price: 9.34,
+            stock: 100,
+            categories: [dogs],
+            description: 'Dolor adipisicing andouille ut, in jerky ham consequat. Occaecat jerky dolor, ut ea venison elit consequat cupidatat ut laborum magna t-bone. Doner landjaeger alcatra cow short ribs.'
+        }, {
+            title: 'XXCat Thing',
+            imageUrl: 'http://placehold.it/300x300',
+            price: 5.97,
+            stock: 100,
+            categories: [cats],
+            description: 'Leberkas nostrud swine, biltong alcatra adipisicing dolore shank laboris anim. Filet mignon elit pancetta pork. Landjaeger tongue commodo, flank leberkas pastrami pig alcatra. Leberkas quis ham hock, in non drumstick chicken sed frankfurter tongue. Officia cillum rump magna.'
+        }, {
+            title: 'KKDog thing',
+            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            price: 9.34,
+            stock: 100,
+            categories: [dogs],
+            description: 'Excepteur cillum ut, beef capicola ribeye labore biltong sed ground round pork chop proident strip steak short ribs id.'
+        }, {
+            title: 'FFAnother Cat Thing',
+            imageUrl: 'http://placehold.it/300x300',
+            price: 5.97,
+            stock: 100,
+            categories: [cats],
+            description: 'Short ribs aliqua pork chop tenderloin shank. Biltong exercitation lorem leberkas drumstick, pork chop labore eu beef meatball tail ut deserunt cupim dolore. Minim drumstick officia, aliqua rump shank fugiat jerky andouille pastrami tempor esse.'
+        }, {
+            title: 'JJAnother dog thing',
+            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            price: 9.34,
+            stock: 100,
+            categories: [dogs],
+            description: 'In leberkas exercitation porchetta pork in esse drumstick sausage filet mignon pork loin meatloaf picanha pork chop consectetur. Voluptate drumstick short loin, cupidatat bacon ball tip ipsum brisket aliqua turkey jerky.'
+        }, {
+            title: 'PPOne More Cat Thingie',
+            imageUrl: 'http://placehold.it/300x300',
+            price: 5.97,
+            stock: 100,
+            categories: [cats],
+            description: 'Shoulder turkey capicola tail, salami aliqua laborum reprehenderit labore. Bacon ad minim beef ribs pig, shoulder biltong. Pig t-bone cow drumstick, ad ham officia proident venison cillum enim andouille ground round doner.'
+        }, {
+            title: 'DDOne more dog thing',
+            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            price: 9.34,
+            stock: 100,
+            categories: [dogs],
+            description: 'Dolor adipisicing andouille ut, in jerky ham consequat. Occaecat jerky dolor, ut ea venison elit consequat cupidatat ut laborum magna t-bone. Doner landjaeger alcatra cow short ribs.'
         });
     })
     .then(function () {
