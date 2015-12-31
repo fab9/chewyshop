@@ -11,7 +11,7 @@
 // Variable overrides come first (without !default). Bootstrap default variables
 // come second because they use !default (they won't get set if set already) and
 // some of them depend on our overrides.
-@import "bootstrap-variables-overrides";
+@import "custom-variables";
 
 // Core variables and mixins
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
