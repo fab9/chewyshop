@@ -11,22 +11,3 @@ object, video {
 //== Colors
 //
 $brand-accent: #E85C41;
-
-.billboard-row--wrapper {
-padding: 12px 0;
-
-}
-
-.billboard-item--dogs {
-  background-image: url("../../assets/images/billboard-dogs.jpg") no-repeat center center;
-  background-size:cover;
-  max-height: 20%;
-  //background-color: red;
-}
-
-.billboard-item--cats {
-  background-image: url("../../assets/images/billboard-cats.jpg") no-repeat center center;
-  background-size:cover;
-  max-height:20%;
-  background-color: green;
-}

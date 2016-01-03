@@ -99,7 +99,7 @@
 // $padding-large-vertical:    10px
 // $padding-large-horizontal:  16px
 
-// $padding-small-vertical:    5px
+ $padding-small-vertical:    4px;
 // $padding-small-horizontal:  10px
 
 // $padding-xs-vertical:       1px
@@ -750,16 +750,16 @@
 //** Padding around the thumbnail image
  $thumbnail-padding:           0;
 //** Thumbnail background color
-// $thumbnail-bg:                $body-bg
+ $thumbnail-bg:                #fff;
 //** Thumbnail border color
- $thumbnail-border:            transprent;
+ $thumbnail-border:            transparent;
 //** Thumbnail border radius
 // $thumbnail-border-radius:     $border-radius-base
 
 //** Custom text color for thumbnail captions
 // $thumbnail-caption-color:     $text-color
 //** Padding around the thumbnail caption
-// $thumbnail-caption-padding:   9px
+ $thumbnail-caption-padding:   10px;
 
 
 //== Wells
