@@ -33,7 +33,7 @@ I love using SASS on any project, it allows me to write cleaner and better CSS. 
 ### Customizing Bootstrap
 While the easiest approach is to override Bootstrap's styles using CSS (not SASS), i.e. duplicating a Bootstrap class with your custom properties, it's not ideal because the extra classes are tacked on to the Bootstrap stylesheet (bigger file size).
 
-A better approach is to assign your own values to Bootstrap's variables _in a separate file_. So when BS is inevitable updated with bug fixes and new features, disentangling your customizations and updating them to the new version won't be a problem.
+A better approach is to assign your own values to Bootstrap's variables _in a separate file_. So when BS is inevitably updated with bug fixes and new features, disentangling your customizations and updating them to the new version won't be a problem.
 
 ## Grunt
 Grunt.js does all the powerful work in this project.
