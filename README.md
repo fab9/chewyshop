@@ -1,13 +1,14 @@
 # Chewyshop
 Chewyshop is a prototype of a full-stack JavaScript e-commerce app. This is a Single Page Application (SPA). Angular takes control of the one `index.html` file and manages the transitions and the different states in such a way that the user will feel like he/she is navigating through different pages.
- 
+
+![product-page](http://i.imgur.com/ZmmYjgO.png) 
+
 ## User Stories
 * [x] As a seller, I want to **create, edit and delete products**.
 * [x] As a user, I want to **see all the published products and their details** when I click on them.
 * [x] As a user, I want to **search for a product** so that I can find what I'm looking for quickly.
 * [x] As a user, I want to have a **category navigation menu** so that I can narrow down the search results.
  
-
 ## Install locally
 ### Prerequisites
 
@@ -46,7 +47,7 @@ Grunt.js does all the powerful work in this project.
 * Watch for changes and re-run, [see](https://github.com/gruntjs/grunt-contrib-watch)
 * and more
 
-# TODOs
+### TODOs
 https://github.com/fab9/chewyshop/issues
 
 Other notes:
