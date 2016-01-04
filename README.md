@@ -2,6 +2,7 @@
 Chewyshop is a prototype of a full-stack JavaScript e-commerce app. This is a Single Page Application (SPA). Angular takes control of the one `index.html` file and manages the transitions and the different states in such a way that the user will feel like he/she is navigating through different pages.
 
 ![product-page](http://i.imgur.com/ZmmYjgO.png) 
+Check out the [demo video on YouTube](https://youtu.be/mt55kst7NQ0).
 
 ## User Stories
 * [x] As a seller, I want to **create, edit and delete products**.
