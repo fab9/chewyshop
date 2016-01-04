@@ -62,7 +62,7 @@ Catalog
             categories: [cats],
             description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
-            title: 'Light Up Christmas Tree Sweater',
+            title: 'Christmas Tree Sweater',
             imageUrl: '/assets/uploads/holiday-sweater.jpg',
             price: 5.97,
             stock: 100,
