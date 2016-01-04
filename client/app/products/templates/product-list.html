@@ -2,7 +2,6 @@
 
 <div class="container">
     <div class="row">
-            <h2>product-list.html</h2>
             <h1 class="page-header">Products
                 <small>{{query}}</small>
             </h1>
@@ -11,7 +10,7 @@
     <div class="row">
         <div class="col-md-3" ng-include="'components/sidebar/sidebar.html'"></div>
         <div class="col-md-3" ng-show="products.length < 1"> No products to show.</div>
-        <div class="col-md-3" ng-repeat="product in products">
+        <div class="col-xs-6 col-md-3" ng-repeat="product in products">
             <div class="thumbnail product-wrapper">
                 <div class="product-meta">
                     <a ui-sref="viewProduct({id: product._id})">

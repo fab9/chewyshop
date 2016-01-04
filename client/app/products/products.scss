@@ -17,6 +17,8 @@
 
 .product-img {
 
+  max-width: 170px;
+  max-height: 170px;
   opacity: 0.9;
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
@@ -29,23 +31,12 @@
 }
 
 .product-footer {
-  border-top: 1px solid #dadada;
-  padding-top: 5px;
+  border-top: 1px solid $gray-lighter;
+  padding-top: $padding-small-vertical;
+  padding-bottom: $padding-small-vertical;
 }
 
 .product-price {
   font-weight: bold;
   font-size: 1.4em;
 }
-
-//
-//@media (min-width: 992px) {
-//  .product-meta {
-//    height: 315px;
-//    overflow: hidden;
-//  }
-//
-//  .thumbnail img {
-//    height: 240px;
-//  }
-//}
