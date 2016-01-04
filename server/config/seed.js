@@ -81,84 +81,84 @@ Catalog
             price: 5.97,
             stock: 100,
             categories: [cats],
-            description: 'Leberkas nostrud swine, biltong adipisicing adipisicing alcatra adipisicing dolore shank laboris anim.'
+            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'Dog thing',
             imageUrl: '/assets/uploads/beggingstrips.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'Excepteur cillum ut, beef capicola ribeye labore biltong sed ground round pork chop proident strip steak short ribs id.'
+            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'Another Cat Thing',
             imageUrl: '/assets/uploads/appeteasers.jpg',
             price: 5.97,
             stock: 100,
             categories: [cats],
-            description: 'Short ribs aliqua pork chop tenderloin shank.'
+            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'Another dog thing',
             imageUrl: '/assets/uploads/beggingstrips.jpg',
-            price: 9.34,
+            price: 9.24,
             stock: 100,
             categories: [dogs],
-            description: 'In leberkas exercitation porchetta pork in esse drumstick saus meatloaf picanha pork chop consectetur.'
+            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'One More Cat Thingie',
             imageUrl: '/assets/uploads/appeteasers.jpg',
-            price: 5.97,
+            price: 7.97,
             stock: 100,
             categories: [cats],
-            description: 'Shoulder turkey capicola tail, salami aliqua laborum reprehenderit labore.'
+            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'One more dog thing',
             imageUrl: '/assets/uploads/beggingstrips.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'Dolor adipisicing andouille ut, in jerky ham consequat.'
+            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'XXCat Thing',
             imageUrl: '/assets/uploads/appeteasers.jpg',
-            price: 5.97,
+            price: 5.44,
             stock: 100,
             categories: [cats],
-            description: 'Leberkas nostrud swine, biltong alcatra adipisicing dolore shank laboris anim.'
+            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'KKDog thing',
             imageUrl: '/assets/uploads/beggingstrips.jpg',
-            price: 9.34,
+            price: 9.44,
             stock: 100,
             categories: [dogs],
-            description: 'Excepteur cillum ut, beef capicola ribeye labore oident strip steak short ribs id.'
+            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'FFAnother Cat Thing',
             imageUrl: '/assets/uploads/appeteasers.jpg',
-            price: 5.97,
+            price: 5.17,
             stock: 100,
             categories: [cats],
-            description: 'Short ribs aliqua pork chop tenderloin shank. Minim drumstick officia, aliqandouille pastrami tempor esse.'
+            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'JJAnother dog thing',
             imageUrl: '/assets/uploads/beggingstrips.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'In leberkas exercitation  consectetur. Voluptate drumstick short loin, cupidatat bacot aliqua turkey jerky.'
+            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'Yet Another Cat Thingie',
             imageUrl: '/assets/uploads/appeteasers.jpg',
-            price: 5.97,
+            price: 4.97,
             stock: 100,
             categories: [cats],
-            description: 'Shoulder turkey capicola tail, labore. Bacon alder biltong. Pig t-bone und round doner.'
+            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'DDOne more dog thing',
             imageUrl: '/assets/uploads/beggingstrips.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'Dolor adipisicing andouille ut, in jerky ham consequat. Doner landjaeger alcatra cow short ribs.'
+            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         });
     })
     .then(function () {
