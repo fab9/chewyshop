@@ -56,105 +56,105 @@ Catalog
     .then(function () {
         return Product.create({
             title: 'Fat Cat',
-            imageUrl: '/assets/uploads/appeteasers.jpg',
+            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
             price: 2.59,
             stock: 250,
             categories: [cats],
             description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'Christmas Tree Sweater',
-            imageUrl: '/assets/uploads/holiday-sweater.jpg',
+            imageUrl: 'http://i.imgur.com/QHRV0ev.jpg',
             price: 5.97,
             stock: 100,
             categories: [other],
             description: 'Let your dog steal the show at Christmas this year with the Pet Holiday Christmas Tree Star Sweater.'
         }, {
             title: 'Begging Strips',
-            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
             description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'Cat Thing',
-            imageUrl: '/assets/uploads/appeteasers.jpg',
+            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
             price: 5.97,
             stock: 100,
             categories: [cats],
             description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'Dog thing',
-            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
             description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'Another Cat Thing',
-            imageUrl: '/assets/uploads/appeteasers.jpg',
+            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
             price: 5.97,
             stock: 100,
             categories: [cats],
             description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'Another dog thing',
-            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
             price: 9.24,
             stock: 100,
             categories: [dogs],
             description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'One More Cat Thingie',
-            imageUrl: '/assets/uploads/appeteasers.jpg',
+            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
             price: 7.97,
             stock: 100,
             categories: [cats],
             description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'One more dog thing',
-            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
             description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'XXCat Thing',
-            imageUrl: '/assets/uploads/appeteasers.jpg',
+            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
             price: 5.44,
             stock: 100,
             categories: [cats],
             description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'KKDog thing',
-            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
             price: 9.44,
             stock: 100,
             categories: [dogs],
             description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'FFAnother Cat Thing',
-            imageUrl: '/assets/uploads/appeteasers.jpg',
+            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
             price: 5.17,
             stock: 100,
             categories: [cats],
             description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'JJAnother dog thing',
-            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
             description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
         }, {
             title: 'Yet Another Cat Thingie',
-            imageUrl: '/assets/uploads/appeteasers.jpg',
+            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
             price: 4.97,
             stock: 100,
             categories: [cats],
             description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
         }, {
             title: 'DDOne more dog thing',
-            imageUrl: '/assets/uploads/beggingstrips.jpg',
+            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
