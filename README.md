@@ -3,7 +3,6 @@ Chewyshop is a prototype of a full-stack JavaScript e-commerce app. This is a Si
 [Live URL](https://chewy-shop.herokuapp.com/)
 
 ![product-page](http://i.imgur.com/ZmmYjgO.png) 
-Check out the [demo video on YouTube](https://youtu.be/mt55kst7NQ0).
 
 ## User Stories
 * [x] As a seller, I want to **create, edit and delete products**.
