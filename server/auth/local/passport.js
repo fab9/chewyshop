@@ -30,7 +30,7 @@ function localAuthenticate(User, email, password, done) {
 }
 
 exports.setup = function(User, config) {
-  passport.use(new LocalStrategy({
+  passport.use(new LocalStrategy({ // define the strategy using passport.use
     usernameField: 'email',
     passwordField: 'password' // this is the virtual field on the model
   }, function(email, password, done) {
