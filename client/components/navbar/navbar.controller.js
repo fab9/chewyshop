@@ -2,7 +2,7 @@
 
 angular.module('chewyshopApp')
     // With the $rootScope dependency, we can catch any change in the event on the search form and broadcast it.
-    .controller('NavbarCtrl', function ($scope, $rootScope, $state, $window, $timeout) {
+    .controller('NavbarCtrl', function ($scope, Auth, $rootScope, $state, $window, $timeout) {
         $scope.menu = [{
             'title': 'Home',
             'state': 'main'
@@ -11,6 +11,10 @@ angular.module('chewyshopApp')
             'state': 'products'
         }];
 
+        $scope.isCollapsed = true;
+        $scope.isLoggedIn = Auth.isLoggedIn;
+        $scope.isAdmin = Auth.isAdmin;
+        $scope.getCurrentUser = Auth.getCurrentUser;
 
         // Broadcast an event when anything on the search form is typed.
         $scope.search = function () {
