@@ -13,6 +13,7 @@
 
             <div class="product-footer">
                 <div class="product-price text-right">{{product.price | currency }}</div>
+                <ngcart-addtocart id="{{product._id}}" quantity="1" quantity-max="9" name="{{product.title}}" price="{{product.price}}" template-url="components/ngcart/addtocart.html" data="product">Add to Cart</ngcart-addtocart>
                 <div>
                     <a ui-sref="editProduct({id: product._id})" class="btn btn-default" role="button">EDIT</a>
                     <a class="btn btn-default" ng-click="deleteProduct()">DELETE</a>

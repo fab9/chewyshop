@@ -20,7 +20,8 @@
                     <p>{{product.description}}</p>
                 </div>
                 <div class="product-footer">
-                        <div class="product-price text-right">{{product.price | currency }}</div>
+                    <div class="product-price text-right">{{product.price | currency }}</div>
+                    <ngcart-addtocart id="{{product._id}}" quantity="1" quantity-max="9" name="{{product.title}}" price="{{product.price}}" template-url="components/ngcart/addtocart.html" data="product">Add to Cart</ngcart-addtocart>
                 </div>
             </div>
         </div>

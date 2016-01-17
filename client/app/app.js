@@ -10,7 +10,8 @@ angular.module('chewyshopApp', [
         'btford.socket-io',
         'ui.router',
         'ui.bootstrap',
-        'ngFileUpload'
+        'ngFileUpload',
+        'ngCart'
     ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
         $urlRouterProvider
