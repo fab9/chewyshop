@@ -37,6 +37,7 @@ dist
 
 # Others
 npm-debug.log
+sandbox/
 
 # IntelliJ project files #
 ##########################

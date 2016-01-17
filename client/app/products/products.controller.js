@@ -2,6 +2,7 @@
 
 var errorHandler, uploadHandler;
 
+
 angular.module('chewyshopApp')
     // Inject our `Products` factory into the controller.
     .controller('ProductsCtrl', function ($scope, Product) {
@@ -10,7 +11,7 @@ angular.module('chewyshopApp')
 
         // Listen to the event that's being broadcasted every time the search form changes.
         $scope.$on('search:term', function (event, data) {
-            if(data.length) {
+            if (data.length) {
                 $scope.products = Product.search({id: data});
                 $scope.query = data;
             } else {
@@ -24,13 +25,13 @@ angular.module('chewyshopApp')
         $scope.products = Product.catalog({id: $stateParams.slug});
         $scope.query = $stateParams.slug;
     })
+
     /*
      * We are injecting new dependencies besides the $scope and Products service,
      * such as $state and $stateParams. The first one allows us to redirect to a different
      * state or route, while $stateParams is an object that contains all the variables
      * from the URL (for example, product id).
      */
-
     .controller('ProductViewCtrl', function ($scope, $state, $stateParams, Product) {
         $scope.product = Product.get({id: $stateParams.id});
         $scope.deleteProduct = function () {
@@ -58,7 +59,29 @@ angular.module('chewyshopApp')
         };
 
         $scope.upload = uploadHandler($scope, Upload, $timeout);
-    });
+    })
+
+    .constant('clientTokenPath', '/api/braintree/client_token')
+
+    .controller('ProductCheckoutCtrl',
+        function ($scope, $http, $state, ngCart) {
+            $scope.errors = '';
+
+            $scope.paymentOptions = {
+                onPaymentMethodReceived: function (payload) {
+                    angular.merge(payload, ngCart.toObject());
+                    payload.total = payload.totalCost;
+                    console.error(payload);
+                    $http.post('/api/orders', payload)
+                        .then(function success() {
+                            ngCart.empty(true);
+                            $state.go('products');
+                        }, function error(res) {
+                            $scope.errors = res;
+                        });
+                }
+            };
+        });
 
 errorHandler = function ($scope) {
     return function error(httpResponse) {
