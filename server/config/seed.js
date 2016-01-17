@@ -55,110 +55,110 @@ Catalog
     })
     .then(function () {
         return Product.create({
-            title: 'Fat Cat',
-            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
-            price: 2.59,
+            title: 'Cat Cave',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/cat-cave.jpg',
+            price: 62.59,
             stock: 250,
             categories: [cats],
-            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'Christmas Tree Sweater',
-            imageUrl: 'http://i.imgur.com/QHRV0ev.jpg',
+            title: 'Unicorn Horn for Horses',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/horse-unicorn-horn.jpg',
             price: 5.97,
             stock: 100,
             categories: [other],
-            description: 'Let your dog steal the show at Christmas this year with the Pet Holiday Christmas Tree Star Sweater.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'Begging Strips',
-            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
+            title: 'Dog Toys Storage',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/dog-toys-burlap-storage.jpg',
+            price: 99.34,
+            stock: 100,
+            categories: [dogs],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
+        }, {
+            title: 'Breakaway Cat Collar',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/cat-collar-breakaway.jpg',
+            price: 8.00,
+            stock: 100,
+            categories: [cats],
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
+        }, {
+            title: 'Personalized Mat',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/personalized-pet-mat.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'Cat Thing',
-            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
+            title: 'Embossing Rolling Pin',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/cat-embossing-rolling-pin.jpg',
             price: 5.97,
             stock: 100,
             categories: [cats],
-            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'Dog thing',
-            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
-            price: 9.34,
-            stock: 100,
-            categories: [dogs],
-            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
-        }, {
-            title: 'Another Cat Thing',
-            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
-            price: 5.97,
-            stock: 100,
-            categories: [cats],
-            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
-        }, {
-            title: 'Another dog thing',
-            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
+            title: 'Stitched Leather Collar',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/stitched-leather-collar.jpg',
             price: 9.24,
             stock: 100,
             categories: [dogs],
-            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'One More Cat Thingie',
-            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
+            title: 'Cat Stickers',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/cat-stickers.jpg',
             price: 7.97,
             stock: 100,
             categories: [cats],
-            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'One more dog thing',
-            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
+            title: 'Personalized Scarves',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/personalized-scarves.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'XXCat Thing',
-            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
+            title: 'Heart Cat Tag',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/cat-call-mom.jpg',
             price: 5.44,
             stock: 100,
             categories: [cats],
-            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'KKDog thing',
-            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
+            title: 'Stoneware Urn',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/stoneware-pet-urn.jpg',
             price: 9.44,
             stock: 100,
             categories: [dogs],
-            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'FFAnother Cat Thing',
-            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
+            title: 'Cat Prints',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/cat-prints.jpg',
             price: 5.17,
             stock: 100,
             categories: [cats],
-            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'JJAnother dog thing',
-            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
+            title: 'Lost Tag',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/lost-tag.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'Yet Another Cat Thingie',
-            imageUrl: 'http://i.imgur.com/tRbuajy.jpg',
+            title: 'Cat Feeder',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/cat-feeder.jpg',
             price: 4.97,
             stock: 100,
             categories: [cats],
-            description: 'The perfect bite-sized toy, Appeteasers will make every hour Happy Hour! Get ‘em while they’re hot!'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         }, {
-            title: 'DDOne more dog thing',
-            imageUrl: 'http://i.imgur.com/Ki1nlIu.jpg',
+            title: 'Rope Dog Leash',
+            imageUrl: 'https://s3.amazonaws.com/petshop-images/dog-rope-leash.jpg',
             price: 9.34,
             stock: 100,
             categories: [dogs],
-            description: 'Bacon ipsum dolor amet adipisicing adipisicing incididunt swine adipisicing shoulder mollit aute corned beef.'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas.'
         });
     })
     .then(function () {
