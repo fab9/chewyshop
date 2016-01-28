@@ -13,14 +13,16 @@
         <div class="col-xs-6 col-md-3" ng-repeat="product in products">
             <div class="thumbnail product-wrapper">
                 <div class="product-meta">
+                    <span class="product-img-container">
                     <a ui-sref="viewProduct({id: product._id})">
                         <img class="product-img" src="{{product.imageUrl}}" alt="{{product.title}}">
-                        <h3 class="product-title">{{product.title}}</h3>
                     </a>
-                    <p>{{product.description}}</p>
+                    </span>
+                    <h3 class="product-title">{{product.title}}</h3>
+                    <p class="product-description">{{product.description}}</p>
                 </div>
                 <div class="product-footer">
-                    <div class="product-price text-right">{{product.price | currency }}</div>
+                    <div class="product-price pull-right">{{product.price | currency }}</div>
                     <ngcart-addtocart id="{{product._id}}" quantity="1" quantity-max="9" name="{{product.title}}" price="{{product.price}}" template-url="components/ngcart/addtocart.html" data="product">Add to Cart</ngcart-addtocart>
                 </div>
             </div>
