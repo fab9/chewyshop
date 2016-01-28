@@ -8,13 +8,13 @@
                     <img class="product-img" src="{{product.imageUrl}}" alt="{{product.title}}">
                     <h3 class="product-title">{{product.title}}</h3>
                 </a>
-                <p>{{product.description}}</p>
+                <p class="product-description">{{product.description}}</p>
             </div>
 
             <div class="product-footer">
-                <div class="product-price text-right">{{product.price | currency }}</div>
+                <div class="product-price pull-right">{{product.price | currency }}</div>
                 <ngcart-addtocart id="{{product._id}}" quantity="1" quantity-max="9" name="{{product.title}}" price="{{product.price}}" template-url="components/ngcart/addtocart.html" data="product">Add to Cart</ngcart-addtocart>
-                <div>
+                <div class="product-btn">
                     <a ui-sref="editProduct({id: product._id})" class="btn btn-default" role="button">EDIT</a>
                     <a class="btn btn-default" ng-click="deleteProduct()">DELETE</a>
                 </div>
